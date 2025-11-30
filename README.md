@@ -78,7 +78,7 @@ All attributes within the Combatant abstract base class (e.g., health, attack, d
     <td>File Handling Specialist</td>
 </tr>
 <tr>
-    <td><img src="pics/kenjie.jpg" width="100" height="100"> </td>
+    <td><img src="PICS/kenjie.jpg" width="100" height="100"> </td>
     <td><strong>Mortel, Markenjie Bryne B.</strong> <br/>
         </a>
     </td>
