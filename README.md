@@ -75,21 +75,21 @@ All attributes within the Combatant abstract base class (e.g., health, attack, d
     <td><strong>Mendoza, Thimoty Bhourex</strong> <br/>
         </a>
     </td>
-    <td>File Handling Specialist</td>
+    <td>Project Role</td>
 </tr>
 <tr>
     <td><img src="PICS/kenjie.jpg" width="100" height="100"> </td>
     <td><strong>Mortel, Markenjie Bryne B.</strong> <br/>
         </a>
     </td>
-    <td>Feature Developer</td>
+    <td>Project Role</td>
 </tr>
 <tr>
     <td><img src="static/renzmarrion.jpg" width="100" height="100"> </td>
     <td><strong>Vergara, Charles Alwyn L.</strong> <br/>
         </a>
     </td>
-    <td>Project Leader/System Architect</td>
+    <td>Project Role</td>
 </tr>
 </table></br>
 
