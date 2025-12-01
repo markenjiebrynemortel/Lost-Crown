@@ -14,51 +14,44 @@ Lost Crown utilizes the concepts of Object-Oriented Program such as encapsulatio
 </p></br>
 
 <h3> ⛾ Object-oriented Principles</h3>
-<p></p>
+<p>
   
 <h2>✳️Encapsulation</h2>
-Definition: Bundling data fields and the methods that operate on that data into a single unit as a class, and restricting direct access to the data.</br>
-
+Definition: Bundling data fields and the methods that operate on that data into a single unit as a class, and restricting direct access to the data.
 ​<h3>Demonstration in Code:</h3>
-All data fields in AbstractCharacter, Weapon, and Armor are declared as private.Access and modification are strictly controlled using public getter and setter methods, such as getHealth() and setHealth().</br> 
+All data fields in AbstractCharacter, Weapon, and Armor are declared as private.Access and modification are strictly controlled using public getter and setter methods, such as getHealth() and setHealth().</br> </br>
 
 <h2>✳️Inheritance</h2>
-Definition: A mechanism where one class inherits the fields and methods of another class, promoting code reuse and establishing a clear hierarchy.</br>
-
+Definition: A mechanism where one class inherits the fields and methods of another class, promoting code reuse and establishing a clear hierarchy.
 <h3>​Demonstration in Code:</h3>
 ​PlayerCharacter extends AbstractCharacter.
 ​Knight, Mage, etc., extend PlayerCharacter.
-​This establishes a clear class hierarchy using superclasses and at least three subclasses as required.  
+​This establishes a clear class hierarchy using superclasses and at least three subclasses as required.  </br></br>
 
 <h2>✳️​Polymorphism</h2>
-Definition: The ability of an object to take on many forms, typically allowing methods to behave differently based on the object type calling them.</br>
-
+Definition: The ability of an object to take on many forms, typically allowing methods to behave differently based on the object type calling them.
 ​<h3>Demonstration in Code:</h3>
 ​Method Overriding: Each specific character class overrides the specialAttack() method to define its unique logic.
-​Dynamic Behavior: The startBattle method handles both players and monsters through AbstractCharacter references, and the correct, specific specialAttack() implementation is called at runtime.</br>
+​Dynamic Behavior: The startBattle method handles both players and monsters through AbstractCharacter references, and the correct, specific specialAttack() implementation is called at runtime.</br></br>
 
 <h2>✳️​Abstraction</h2>
-​Definition: Hiding the complex implementation details and showing only the necessary features to the user.</br>
-
+​Definition: Hiding the complex implementation details and showing only the necessary features to the user.
 ​<h3>Demonstration in Code:</h3>
-​The abstract class AbstractCharacter and the abstract void specialAttack() method force the core design but hide the individual implementation details. Like when the AbstractCharacter doesn't need to know how a Mage attacks, only that it must have an attack.</br>
+​The abstract class AbstractCharacter and the abstract void specialAttack() method force the core design but hide the individual implementation details. Like when the AbstractCharacter doesn't need to know how a Mage attacks, only that it must have an attack.</br></br>
 
 ​<h2>✳️Exception Handling</h2>
-​Definition: Providing a mechanism to handle runtime errors gracefully, such as invalid user input.</br>
-
+​Definition: Providing a mechanism to handle runtime errors gracefully, such as invalid user input.
 ​<h3>Demonstration in Code:</h3>
 The try-catch block is used in the selectCharacter() and startBattle() methods to catch InputMismatchException when the user enters text instead of a number, preventing the program from crashing.
 </p></br>
 
-<h2> 🖧 Breakdown of the Code</h2></br>
+<h2> 🖧 Breakdown of the Code</h2>
 <p>
-Segmented Java Code Breakdown</br>
-
+<h3>Segmented Java Code Breakdown:<h3>
 <h3>⚪ ​1. Item Classes: Weapon.java and Armor.java</h3>
-​These classes are responsible for defining and holding the properties of equippable items.</br>
-
-Explanation of Encapsulation:</br>
-Both classes keep their fields like the attackModifier and name private. Access to these fields is only permitted through public getter methods like the getAttackModifier()). This protects the data from unauthorized or inconsistent external modification.</br>
+​These classes are responsible for defining and holding the properties of equippable items.
+<h3>Explanation of Encapsulation:</h3>
+Both classes keep their fields like the attackModifier and name private. Access to these fields is only permitted through public getter methods like the getAttackModifier()). This protects the data from unauthorized or inconsistent external modification.</br></br>
 
 <h3>⚪ 2. Base Classes: AbstractCharacter and PlayerCharacter</h3>
 ​This is the core of the project's Inheritance and Abstraction structure.</br>
@@ -67,12 +60,12 @@ Both classes keep their fields like the attackModifier and name private. Access 
 ​This abstract class establishes the minimum requirements and shared mechanics for all combat participants, the players and monsters.
 
 B. PlayerCharacter.java</br>
-​This abstract class is a layer between the generic AbstractCharacter and the specific player classes.</br>
+​This abstract class is a layer between the generic AbstractCharacter and the specific player classes.</br></br>
 
 <h3>⚪ 3. Concrete Subclasses: Knight, Mage, Archer, Assassin, Dwarf, and Monster.</h3>
 ​These classes define the unique combat identities, primarily demonstrating Polymorphism.
 
-The game engine can treat a Knight and a Mage uniformly as an AbstractCharacter. When the method player.specialAttack(target) is called, Java automatically determines and executes the correct, specific code block for the actual type of character (Knight.specialAttack or Mage.specialAttack), which is dynamic behavior through superclass references.</br>
+The game engine can treat a Knight and a Mage uniformly as an AbstractCharacter. When the method player.specialAttack(target) is called, Java automatically determines and executes the correct, specific code block for the actual type of character (Knight.specialAttack or Mage.specialAttack), which is dynamic behavior through superclass references.</br></br>
 
 <h3>⚪ 4. Game Engine: FinalProjectGame.java</h3>
 ​This class contains the main method and controls the entire program flow, demonstrating Exception Handling and the use of Arrays.
