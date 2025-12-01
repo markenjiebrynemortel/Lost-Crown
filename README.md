@@ -9,24 +9,8 @@ Vergara, Charles Alwyn L.
 </p>
 <h3> 🔍 Overview</h3>
 <p>
-The entire game is structured across several logical sections to maximize code reusability and demonstrate the OOP principles which are Encapsiulation, Inheritance, P{olymorphism, Abstraction and Exception Handling</br>  
+The entire game is structured across several logical sections to maximize code reusability and demonstrate the OOP principles which are Encapsiulation, Inheritance, Polymorphism, Abstraction and Exception Handling</br>  
 Lost Crown utilizes the concepts of Object-Oriented Program such as encapsulation, inheritance, polymorphism, and abstraction
-</p></br>
-
-<h3> ℹ️ Instructions/Informations about the Game</h3>
-<p>
-(Add what can the user do when they open or play the game)
-</p></br>
-
-<h3> 🌐 Project Structure</h3>
-<p>
-(Structure of the Files in github)</br>
-(Structure of the Code Itself)
-</p></br>
-
-<h3> 🎮 How to Run the Game</h3>
-<p>
-(How to Run)</br>
 </p></br>
 
 <h3> ⛾ Object-oriented Principles</h3>
@@ -52,6 +36,30 @@ All attributes within the Combatant abstract base class (e.g., health, attack, d
 ​<h2>✳️Exception Handling</h2>
 ​In the BattleSimulator class, the getValidInput method uses a try-catch block to safely handle non-integer input from the user during move selection, providing clear error messages and preventing the program from crashing.
 </p></br>
+
+<h3>Breakdown of the Code</h3></br>
+<p>
+Segmented Java Code Breakdown
+  
+​1. Item Classes: Weapon.java and Armor.java
+​These classes are responsible for defining and holding the properties of equippable items.
+Explanation of Encapsulation:
+Both classes keep their fields. Access to these fields is only permitted through public getter methods like getAttackModifier()). [cite_start] This protects the data from unauthorized or inconsistent external modification.
+
+2. Base Classes: AbstractCharacter and PlayerCharacter
+​This is the core of the project's Inheritance and Abstraction structure.
+
+​A. AbstractCharacter.java
+​This abstract class establishes the minimum requirements and shared mechanics for all combat participants (players and monsters).
+B. PlayerCharacter.java
+​This abstract class is a layer between the generic AbstractCharacter and the specific player classes.
+4. Concrete Subclasses: Knight, Mage, Archer, Assassin, Dwarf, and Monster
+​These classes define the unique combat identities, primarily demonstrating Polymorphism.
+Explanation of Polymorphism (Method Overriding):
+[cite_start]Polymorphism means "many forms". The game engine can treat a Knight and a Mage uniformly as an AbstractCharacter. [cite_start]When the method player.specialAttack(target) is called, Java automatically determines and executes the correct, specific code block for the actual type of character (Knight.specialAttack or Mage.specialAttack), which is dynamic behavior through superclass references. 
+5. Game Engine: FinalProjectGame.java
+​This class contains the main method and controls the entire program flow, demonstrating Exception Handling and the use of Arrays.
+</p>
 
 <h3>🎯 Example Output</h3>
 <p>
