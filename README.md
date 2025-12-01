@@ -7,7 +7,7 @@ Mortel, Markenjie Bryne B. <br/>
 Vergara, Charles Alwyn L.
 
 </p>
-<h3> 🔍 Overview</h3>
+<h2> 🔍 Overview</h2>
 <p>
 The entire game is structured across several logical sections to maximize code reusability and demonstrate the OOP principles which are Encapsiulation, Inheritance, Polymorphism, Abstraction and Exception Handling</br>  
 Lost Crown utilizes the concepts of Object-Oriented Program such as encapsulation, inheritance, polymorphism, and abstraction
@@ -17,27 +17,40 @@ Lost Crown utilizes the concepts of Object-Oriented Program such as encapsulatio
 <p></p>
   
 <h2>✳️Encapsulation</h2>
-All attributes within the Combatant abstract base class (e.g., health, attack, defense) are declared as protected and accessed via public getter methods (getHealth(), getName(), etc.), ensuring controlled and safe access to the object's state.</br>
+Definition: Bundling data fields and the methods that operate on that data into a single unit as a class, and restricting direct access to the data.</br>
+
+​<h3>Demonstration in Code:</h3></br> 
+All data fields in AbstractCharacter, Weapon, and Armor are declared as private.Access and modification are strictly controlled using public getter and setter methods, such as getHealth() and setHealth().</br> 
 
 <h2>✳️Inheritance</h2>
-​A clear class hierarchy is established:
-​Combatant (Base Abstract Class) is the parent of:
-​PlayerCharacter (Abstract Class)
-​Enemy (Base Class)
-​Concrete player classes (Knight, Archer, Assassin) inherit from PlayerCharacter.
-​Specific enemy types (Goblin, Chaus, etc.) inherit from Enemy.
+Definition: A mechanism where one class inherits the fields and methods of another class, promoting code reuse and establishing a clear hierarchy.</br>
+
+<h3>​Demonstration in Code:</h3></br>
+​PlayerCharacter extends AbstractCharacter.
+​Knight, Mage, etc., extend PlayerCharacter.
+​This establishes a clear class hierarchy using superclasses and at least three subclasses as required.  
 
 <h2>✳️​Polymorphism</h2>
-​The battle logic operates on generic Combatant references (player and enemy). When methods like basicAttack() or specialAttack() are called, the specific implementation defined by the concrete class (e.g., Archer vs. Assassin) is executed at runtime.
+Definition: The ability of an object to take on many forms, typically allowing methods to behave differently based on the object type calling them.</br>
+
+​<h3>Demonstration in Code:</h3></br>
+​Method Overriding: Each specific character class overrides the specialAttack() method to define its unique logic.
+​Dynamic Behavior: The startBattle method handles both players and monsters through AbstractCharacter references, and the correct, specific specialAttack() implementation is called at runtime.</br>
 
 <h2>✳️​Abstraction</h2>
-​The abstract class Combatant defines the necessary structure and methods (like basicAttack and specialAttack) that all fighting entities must implement, concealing the complex, class-specific damage and ability logic.
+​Definition: Hiding the complex implementation details and showing only the necessary features to the user.</br>
+
+​<h3>Demonstration in Code:</h3></br>
+​The abstract class AbstractCharacter and the abstract void specialAttack() method force the core design but hide the individual implementation details. Like when the AbstractCharacter doesn't need to know how a Mage attacks, only that it must have an attack.</br>
 
 ​<h2>✳️Exception Handling</h2>
-​In the BattleSimulator class, the getValidInput method uses a try-catch block to safely handle non-integer input from the user during move selection, providing clear error messages and preventing the program from crashing.
+​Definition: Providing a mechanism to handle runtime errors gracefully, such as invalid user input.</br>
+
+​<h3>Demonstration in Code:</h3></br>
+The try-catch block is used in the selectCharacter() and startBattle() methods to catch InputMismatchException when the user enters text instead of a number, preventing the program from crashing.
 </p></br>
 
-<h3>Breakdown of the Code</h3></br>
+<h2> 🖧 Breakdown of the Code</h2></br>
 <p>
 Segmented Java Code Breakdown</br>
 
@@ -56,18 +69,12 @@ Both classes keep their fields like the attackModifier and name private. Access 
 B. PlayerCharacter.java</br>
 ​This abstract class is a layer between the generic AbstractCharacter and the specific player classes.</br>
 
-⚪ 3. Concrete Subclasses: Knight, Mage, Archer, Assassin, Dwarf, and Monster</br>
-​These classes define the unique combat identities, primarily demonstrating Polymorphism.</br>
+⚪ 3. Concrete Subclasses: Knight, Mage, Archer, Assassin, Dwarf, and Monster. ​These classes define the unique combat identities, primarily demonstrating Polymorphism.</br>
 
 The game engine can treat a Knight and a Mage uniformly as an AbstractCharacter. When the method player.specialAttack(target) is called, Java automatically determines and executes the correct, specific code block for the actual type of character (Knight.specialAttack or Mage.specialAttack), which is dynamic behavior through superclass references.</br>
 
 ⚪ 4. Game Engine: FinalProjectGame.java
 ​This class contains the main method and controls the entire program flow, demonstrating Exception Handling and the use of Arrays.
-</p></br>
-
-<h3>🎯 Example Output</h3>
-<p>
-(Screenshot of the Game)</br>
 </p></br>
 
 <h3>👤 Members </h3>
