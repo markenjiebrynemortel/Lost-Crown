@@ -1,15 +1,15 @@
-<h1 align = "center">⚔️🛡️Lost Crown 👑</h1>
+<h1 align = "center">⚔️🛡️The Lost Crown 👑</h1>
 <h3 align = "center"></h3>
 <p align = "center">
 <b>BSIT-2114 </b> <br/>
-Mendoza, Timothy Bhourex <br/>
+Mendoza, Thimoty Bhourex <br/>
 Mortel, Markenjie Bryne B. <br/>
 Vergara, Charles Alwyn L.
 
 </p>
 <h3> 🔍 Overview</h3>
 <p>
-(Brief description of the game) </br>  
+The entire game is structured across several logical sections to maximize code reusability and demonstrate OOP principles</br>  
 
 Lost Crown utilizes the concepts of Object-Oriented Program such as encapsulation, inheritance, polymorphism, and abstraction
 </p></br>
@@ -85,7 +85,7 @@ All attributes within the Combatant abstract base class (e.g., health, attack, d
     <td>Project Role</td>
 </tr>
 <tr>
-    <td><img src="static/renzmarrion.jpg" width="100" height="100"> </td>
+    <td><img src="PICS/charles.jpg" width="100" height="100"> </td>
     <td><strong>Vergara, Charles Alwyn L.</strong> <br/>
         </a>
     </td>
