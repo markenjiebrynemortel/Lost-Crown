@@ -9,8 +9,7 @@ Vergara, Charles Alwyn L.
 </p>
 <h3> 🔍 Overview</h3>
 <p>
-The entire game is structured across several logical sections to maximize code reusability and demonstrate OOP principles</br>  
-
+The entire game is structured across several logical sections to maximize code reusability and demonstrate the OOP principles which are Encapsiulation, Inheritance, P{olymorphism, Abstraction and Exception Handling</br>  
 Lost Crown utilizes the concepts of Object-Oriented Program such as encapsulation, inheritance, polymorphism, and abstraction
 </p></br>
 
@@ -68,28 +67,27 @@ All attributes within the Combatant abstract base class (e.g., health, attack, d
 <tr>
     <th> &nbsp; </th>
     <th> Name </th>
-    <th> Role </th>
 </tr>
 <tr>
     <td><img src="static/marieemoiselle.JPG" width="100" height="100"> </td>
     <td><strong>Mendoza, Thimoty Bhourex</strong> <br/>
         </a>
     </td>
-    <td>Project Role</td>
+  
 </tr>
 <tr>
     <td><img src="PICS/kenjie.jpg" width="100" height="100"> </td>
     <td><strong>Mortel, Markenjie Bryne B.</strong> <br/>
         </a>
     </td>
-    <td>Project Role</td>
+   
 </tr>
 <tr>
     <td><img src="PICS/charles.jpg" width="100" height="100"> </td>
     <td><strong>Vergara, Charles Alwyn L.</strong> <br/>
         </a>
     </td>
-    <td>Project Role</td>
+  
 </tr>
 </table></br>
 
