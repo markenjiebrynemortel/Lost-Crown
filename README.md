@@ -41,20 +41,26 @@ All attributes within the Combatant abstract base class (e.g., health, attack, d
 <p>
 Segmented Java Code Breakdown</br>
 
-⚪ ​1. Item Classes: Weapon.java and Armor.java
-​These classes are responsible for defining and holding the properties of equippable items.
-Explanation of Encapsulation:
-Both classes keep their fields (e.g., attackModifier, name) private. Access to these fields is only permitted through public getter methods (e.g., getAttackModifier()). [cite_start]This protects the data from unauthorized or inconsistent external modification.</br>
-⚪ 2. Base Classes: AbstractCharacter and PlayerCharacter
-​This is the core of the project's Inheritance and Abstraction structure.
-​A. AbstractCharacter.java
-​This abstract class establishes the minimum requirements and shared mechanics for all combat participants (players and monsters).
-B. PlayerCharacter.java
+⚪ ​1. Item Classes: Weapon.java and Armor.java</br>
+​These classes are responsible for defining and holding the properties of equippable items.</br>
+
+Explanation of Encapsulation:</br>
+Both classes keep their fields like the attackModifier and name private. Access to these fields is only permitted through public getter methods like the getAttackModifier()). This protects the data from unauthorized or inconsistent external modification.</br>
+
+⚪ 2. Base Classes: AbstractCharacter and PlayerCharacter</br>
+​This is the core of the project's Inheritance and Abstraction structure.</br>
+
+​A. AbstractCharacter.java</br>
+​This abstract class establishes the minimum requirements and shared mechanics for all combat participants, the players and monsters.
+
+B. PlayerCharacter.java</br>
 ​This abstract class is a layer between the generic AbstractCharacter and the specific player classes.</br>
-⚪ 3. Concrete Subclasses: Knight, Mage, Archer, Assassin, Dwarf, and Monster
-​These classes define the unique combat identities, primarily demonstrating Polymorphism.
-Explanation of Polymorphism (Method Overriding):
-[cite_start]Polymorphism means "many forms". The game engine can treat a Knight and a Mage uniformly as an AbstractCharacter. [cite_start]When the method player.specialAttack(target) is called, Java automatically determines and executes the correct, specific code block for the actual type of character (Knight.specialAttack or Mage.specialAttack), which is dynamic behavior through superclass references. 
+
+⚪ 3. Concrete Subclasses: Knight, Mage, Archer, Assassin, Dwarf, and Monster</br>
+​These classes define the unique combat identities, primarily demonstrating Polymorphism.</br>
+
+The game engine can treat a Knight and a Mage uniformly as an AbstractCharacter. When the method player.specialAttack(target) is called, Java automatically determines and executes the correct, specific code block for the actual type of character (Knight.specialAttack or Mage.specialAttack), which is dynamic behavior through superclass references.</br>
+
 ⚪ 4. Game Engine: FinalProjectGame.java
 ​This class contains the main method and controls the entire program flow, demonstrating Exception Handling and the use of Arrays.
 </p></br>
