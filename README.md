@@ -29,10 +29,6 @@ Lost Crown utilizes the concepts of Object-Oriented Program such as encapsulatio
 (How to Run)</br>
 </p></br>
 
-<h3> 📜 Features</h3>
-<p>
-(Features of the game)</br>
-</p></br>
 <h3> ⛾ Object-oriented Principles</h3>
 <p></p>
   
@@ -62,7 +58,7 @@ All attributes within the Combatant abstract base class (e.g., health, attack, d
 (Screenshot of the Game)</br>
 </p></br>
 
-<h3>👤 Contributors</h3>
+<h3>👤 Members </h3>
 <table>
 <tr>
     <th> &nbsp; </th>
