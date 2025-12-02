@@ -50,7 +50,6 @@ The try-catch block is used in the selectCharacter() and startBattle() methods t
 <h3>Segmented Java Code Breakdown:<h3>
 <h3>⚪ ​1. Item Classes: Weapon.java and Armor.java</h3>
 ​These classes are responsible for defining and holding the properties of equippable items.
-<h3>Explanation of Encapsulation:</h3>
 Both classes keep their fields like the attackModifier and name private. Access to these fields is only permitted through public getter methods like the getAttackModifier()). This protects the data from unauthorized or inconsistent external modification.</br></br>
 
 <h3>⚪ 2. Base Classes: AbstractCharacter and PlayerCharacter</h3>
