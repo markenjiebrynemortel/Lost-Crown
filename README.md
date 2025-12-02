@@ -19,7 +19,7 @@ Lost Crown utilizes the concepts of Object-Oriented Program such as encapsulatio
 <h2>✳️Encapsulation</h2>
 Definition: Bundling data fields and the methods that operate on that data into a single unit as a class, and restricting direct access to the data.
 ​<h3>Demonstration in Code:</h3>
-All data fields in AbstractCharacter, Weapon, and Armor are declared as private.Access and modification are strictly controlled using public getter and setter methods, such as getHealth() and setHealth().</br> </br>
+All data fields in AbstractCharacter, Weapon, and Armor are declared as private. Access and modification are strictly controlled using public getter and setter methods, such as getHealth() and setHealth().</br> </br>
 
 <h2>✳️Inheritance</h2>
 Definition: A mechanism where one class inherits the fields and methods of another class, promoting code reuse and establishing a clear hierarchy.
