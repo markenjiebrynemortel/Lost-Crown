@@ -78,7 +78,7 @@ The game engine can treat a Knight and a Mage uniformly as an AbstractCharacter.
     <th> Name </th>
 </tr>
 <tr>
-    <td><img src="static/marieemoiselle.JPG" width="100" height="100"> </td>
+    <td><img src="PICS/thimoty.jpg" width="100" height="100"> </td>
     <td><strong>Mendoza, Thimoty Bhourex</strong> <br/>
         </a>
     </td>
